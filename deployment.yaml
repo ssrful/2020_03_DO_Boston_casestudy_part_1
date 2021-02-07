@@ -1,0 +1,5 @@
+tasks:
+  -name: Deploying application to Kubernetes
+   shell: minikube start
+  -name: Cloning git project on Client VM
+   shell: git clone https://github.com/ssrful/2020_03_DO_Boston_casestudy_part_1.git

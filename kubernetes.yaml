@@ -1,0 +1,37 @@
+apiVersion: apps/v1 # Version of Kubernetes API
+kind: Deployment # The type of Deployment/Object
+metadata: # Part where describe the name and object
+  name: capstone
+  labels:
+    app: flask
+spec:
+  selector:
+    matchLabels:
+      app: flask
+  replicas: 5 #number of pods that would be running on Kubernetes
+  template:
+    metadata:
+      labels:
+        app: flask
+    spec: # Part related to Docker container
+      containers:
+      - name: capstone
+        image: ssrful/capstone
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 9090
+
+---
+apiVersion: v1 # Metadata for App's services
+kind: Service
+metadata:
+  name: capstone # Name of the service 
+spec:
+  type: NodePort # Type and port allocation
+  selector:
+    app: capstone
+  ports:
+  - protocol: TCP
+    port: 9090
+    targetPort: 9090
+    nodePort: 31000

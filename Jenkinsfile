@@ -24,15 +24,23 @@ pipeline {
 			}			
 		}
 	}
-	stage('Deploy our image') {
+	stage('Deploy to Docker') {
 	//This step will push the successful image to Docker Hub
 		steps{
 			script {
 				docker.withRegistry( '', REGISTRY_ID ) {
 					sh 'docker push $DOCKER_HUB_REPO:$BUILD_NUMBER'
 					sh 'docker push $DOCKER_HUB_REPO:latest'
-					echo "Image was successfully pushed to Docker Hub"
+					echo "Image was successfully pushed to Docker Hub. Yaaay!"
 				}
+			}
+		}
+	}
+	//Lastly let's deploy the application via ansible to Kubernetes
+	stage('Deploy to Kubernetes/Ansible') {
+		steps {
+			script {
+				sh 'ansible-playbook deployment.yaml'
 			}
 		}
 	}
