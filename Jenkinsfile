@@ -40,7 +40,7 @@ pipeline {
 	stage('Deploy to Kubernetes/Ansible') {
 		steps {
 			script {
-				sh 'ansible-playbook deployment.yaml'
+				sh 'ansible-playbook deployment.yaml -u client@10.0.2.5'
 			}
 		}
 	}
