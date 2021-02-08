@@ -1,4 +1,4 @@
-❗ Project Capstone. Instruction to [follow](https://docs.google.com/document/d/17OwlITE-yPWNj3Vi5RtQfz3ItvSkOfnbaVMnzlZyGTg)
+❗ Project Capstone. Please read [this](https://docs.google.com/document/d/17OwlITE-yPWNj3Vi5RtQfz3ItvSkOfnbaVMnzlZyGTg) before proceed to the main part.
 
 # Project Capstone - Part I. 
 
@@ -19,7 +19,7 @@ Building a Docker Jenkins Pipeline, Testing Application, Pushing to Docker Hub, 
 - **And** image will be pushed to Docker Hub. _Kubernetes.yaml_ file is required to pull image from DockerHub and create 5 pods in Kubernetes.
 
 ## 📌 Must Have
-- The following file are must have in order to achieve the results: **Dockerfile,** **Jenkinsfile,** **kubernetes.yaml,** **Ansible-Playboo.yaml**
+- The following file are must have in order to achieve the results: **Dockerfile,** **Jenkinsfile,** **kubernetes.yaml,** **Ansible-Playbook.yaml**
 - **Optional** to have _**yaml**_ file with necessary commands which will run and install all dependencies automatically.
 
 ## ❗ Visual overview of Project
