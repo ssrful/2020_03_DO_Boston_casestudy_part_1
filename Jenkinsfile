@@ -44,11 +44,6 @@ pipeline {
 				}
 			}
 		}
-		stage('Cleaning Up') {
-			steps {
-				sh 'docker rmi $registry:$BUILD_NUMBER'
-			}
-		}
 	//Lastly let's deploy the application via ansible to Kubernetes
 	//stage('Deploy to Kubernetes/Ansible') {
 	//	steps {
