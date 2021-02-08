@@ -35,6 +35,7 @@ spec:
     port: 9090
     targetPort: 9090
     nodePort: 32001
+    
 - name: Deploying a Flask app
   k8s:
     state: present
@@ -52,8 +53,3 @@ spec:
             - protocol: TCP
               port: 9090
               targetPort: 9090
-post_tasks:
-  - name: Run flask app via minikube
-    command: minikube service flask --url=true
-    changed_when: false
-    register: minikube_service
