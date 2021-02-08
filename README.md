@@ -18,9 +18,9 @@ Building a Docker Jenkins Pipeline, Testing Application, Pushing to Docker Hub, 
 - **Next** add Docker Hub credentials to push the image after successful build
 - **Next** image was pushed to Docker Hub, set up _Kubernetes.yaml_ file to pull image and create 5 pods 
 
-## 📌 Steps 
+## 📌 Must Have
 - The following file are must have in order to achieve the results: **Dockerfile,** **Jenkinsfile,** **kubernetes.yaml,** **Ansible-Playboo.yaml**
 - **Optional** to have _**yaml**_ file with necessary commands which will run and install all dependencies automatically.
 
-## ❗ Visual diagram of all steps that will be completed in this project
+## ❗ Visual overview of Project
 ![screenshot](CAPSTONE_PROJECT.jpg)
