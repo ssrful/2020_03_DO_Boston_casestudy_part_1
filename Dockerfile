@@ -4,4 +4,4 @@ COPY . /usr/src/app
 RUN apt-get -y update 
 RUN pip install -r requirements.txt
 EXPOSE 9090
-CMD ["py", "web.py"]
+CMD ["python", "web.py"]
