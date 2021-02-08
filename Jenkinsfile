@@ -12,6 +12,13 @@ pipeline {
 		skipStagesAfterUnstable ()
 	}
 	stages {
+		stage ('Cleaning previous repository') {
+			steps {
+				sh 'rm -rf $PWD/2020_03_DO_Boston_casestudy_part_1'
+			}
+		}
+	}
+	stages {
 		stage('Pulling image from GitHub') {
 			steps {
 				sh 'git clone https://github.com/ssrful/2020_03_DO_Boston_casestudy_part_1.git'
