@@ -7,7 +7,10 @@ pipeline {
 		REGISTRY_ID = 'dockerhub_id'
 		//Container Image name
 		dockerImage = 'capstone'
-}
+	}
+	options {
+		skipStagesAfterUnstable ()
+	}
 	stages {
 		stage('Pulling image from GitHub') {
 			steps {
@@ -34,6 +37,11 @@ pipeline {
 					echo "Image was successfully pushed to Docker Hub. Yaaay!"
 				}
 			}
+		}
+	}
+	stage('Cleaning Up') {
+		steps {
+			sh 'docker rmi $registry:$BUILD_NUMBER'
 		}
 	}
 	//Lastly let's deploy the application via ansible to Kubernetes
