@@ -1,4 +1,4 @@
-❗ Project Capstone. Please read [this](https://docs.google.com/document/d/17OwlITE-yPWNj3Vi5RtQfz3ItvSkOfnbaVMnzlZyGTg) before proceed to the main part.
+❗ Project Capstone. Please read [**this**](https://docs.google.com/document/d/17OwlITE-yPWNj3Vi5RtQfz3ItvSkOfnbaVMnzlZyGTg) before proceed to the main part.
 
 # Project Capstone - Part I. 
 

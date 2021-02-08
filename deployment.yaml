@@ -1,3 +1,4 @@
+-hosts: server1
 tasks:
   -name: Deploying application to Kubernetes
    shell: minikube start
