@@ -23,4 +23,4 @@ Building a Docker Jenkins Pipeline, Testing Application, Pushing to Docker Hub, 
 - **Optional** to have _**yaml**_ file with necessary commands which will run and install all dependencies automatically.
 
 ## ❗ Visual overview of Project
-![screenshot](CAPSTONE_PROJECT.jpg)
+![screenshot](https://github.com/ssrful/2020_03_DO_Boston_casestudy_part_1/blob/main/templates/CAPSTONE%20PROJECT.jpg)
