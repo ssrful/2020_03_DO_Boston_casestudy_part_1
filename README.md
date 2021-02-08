@@ -9,6 +9,7 @@ Building a Docker Jenkins Pipeline, Testing Application, Pushing to Docker Hub, 
 - **Then** install necessary Jenkins Plugins:
 ```
 • Ansible
+• Convert To Pipeline
 • Docker
 • Docker Pipeline
 • CloudBees Docker Custom Build Environment
