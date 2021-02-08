@@ -37,12 +37,12 @@ pipeline {
 		}
 	}
 	//Lastly let's deploy the application via ansible to Kubernetes
-	stage('Deploy to Kubernetes/Ansible') {
-		steps {
-			script {
-				sh 'kubectl apply -f kubernetes.yaml'
-			}
-		}
-	}
+	//stage('Deploy to Kubernetes/Ansible') {
+	//	steps {
+	//		script {
+	//			sh 'kubectl apply -f kubernetes.yaml'
+	//		}
+	//	}
+	//}
 	}
 }
