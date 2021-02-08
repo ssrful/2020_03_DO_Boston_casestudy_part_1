@@ -21,7 +21,7 @@ Building a Docker Jenkins Pipeline, Testing Application, Pushing to Docker Hub, 
 
 ## 📌 Must Have
 - The following file are must have in order to achieve the results: **Dockerfile,** **Jenkinsfile,** **kubernetes.yaml,** **Ansible-Playbook.yaml**
-- **Optional** to have _**yaml**_ file with necessary commands which will run and install all dependencies automatically.
+- **Optional** to have _**yaml**_ file with necessary commands which will run and install all dependencies on Client VM automatically via Ansible.
 
 ## ❗ Visual overview of Project
 ![image](https://raw.github.com/ssrful/2020_03_DO_Boston_casestudy_part_1/main/templates/CAPSTONE_PROJECT.jpg)
